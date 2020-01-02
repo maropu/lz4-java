@@ -209,6 +209,14 @@
       <includepath path="${build}/jni-headers" />
       <fileset dir="${src}/lz4/lib" includes="lz4.c, lz4hc.c, xxhash.c" />
       <fileset dir="${src}/jni" includes="*.c" />
+      <!--
+      I tried to compile lz4-java on the Mac env below:
+      $sw_vers
+      ProductName:      Mac OS X
+      ProductVersion:   10.12.6
+      BuildVersion:     16G1510
+      -->
+      <compilerarg value="-mmacosx-version-min=10.12"/>
       <linker />
     </cpptasks:cc>
   </target>

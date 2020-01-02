@@ -1,0 +1,1290 @@
+Apache Ant(TM) version 1.10.7 compiled on September 1 2019
+Trying the default build file: build.xml
+Buildfile: /Users/maropu/Repositories/lz4-java/build.xml
+Detected Java version: 1.8 in: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+Detected OS: Mac OS X
+parsing buildfile /Users/maropu/Repositories/lz4-java/build.xml with URI = file:/Users/maropu/Repositories/lz4-java/build.xml
+Project base dir set to: /Users/maropu/Repositories/lz4-java
+parsing buildfile jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+Property "lz4-pure-java" has not been set
+Property "lz4-pure-java" has not been set
+Property "lz4-pure-java" has not been set
+Property "lz4-java.jar" has not been set
+Property "lz4-java.jar" has not been set
+ [macrodef] creating macro  deploy
+Build sequence for target(s) `dist' is [install-bnd, init, generate-sources, compile-java, install-cpptasks, check-skip-jni-or-java10+, generate-headers, compile-jni, compile, -jar, -jar-pure-java, jar, bundle, docs, sources, makepom, dist]
+Complete build sequence is [install-bnd, init, generate-sources, compile-java, install-cpptasks, check-skip-jni-or-java10+, generate-headers, compile-jni, compile, -jar, -jar-pure-java, jar, bundle, docs, sources, makepom, dist, clean, -deploy, compile-tests, ivy-bootstrap, dist-skip-jni, install-forbidden-apis, test, install-maven-ant-tasks, forbidden-apis, stage-skip-test, test-skip-jni, stage, -ivy-install, test-jar, install-junit4, -stage, -test, deploy, ]
+
+install-bnd:
+parsing buildfile jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/ant/antlib.xml with URI = jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/ant/antlib.xml from a zip file
+[ivy:cachepath] No ivy:settings found for the default reference 'ivy.instance'.  A default instance will be used
+[ivy:cachepath] Loading jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivy.properties
+[ivy:cachepath] searching settings file: trying /Users/maropu/Repositories/lz4-java/ivysettings.xml
+[ivy:cachepath] searching settings file: trying /Users/maropu/Repositories/lz4-java/ivyconf.xml
+[ivy:cachepath] searching settings file: trying ivysettings.xml
+[ivy:cachepath] searching settings file: trying ivyconf.xml
+[ivy:cachepath] no settings file found, using default...
+[ivy:cachepath] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:cachepath] jakarta commons httpclient not found: using jdk url handling
+[ivy:cachepath] :: loading settings :: url = jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[ivy:cachepath] no default ivy user dir defined: set to /Users/maropu/.ivy2
+[ivy:cachepath] including url: jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[ivy:cachepath] no default cache defined: set to /Users/maropu/.ivy2/cache
+[ivy:cachepath] including url: jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[ivy:cachepath] including url: jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[ivy:cachepath] including url: jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[ivy:cachepath] including url: jar:file:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[ivy:cachepath] settings loaded (5080ms)
+[ivy:cachepath] 	default cache: /Users/maropu/.ivy2/cache
+[ivy:cachepath] 	default resolver: default
+[ivy:cachepath] 	-- 5 resolvers:
+[ivy:cachepath] 	shared [file]
+[ivy:cachepath] 	default [chain] [local, main]
+[ivy:cachepath] 	public [ibiblio]
+[ivy:cachepath] 	main [chain] [shared, public]
+[ivy:cachepath] 	local [file]
+[ivy:cachepath] using inline mode to resolve biz.aQute bnd 1.50.0 (default)
+[ivy:cachepath] no resolved descriptor found: launching default resolve
+Overriding previous definition of property "ivy.version"
+[ivy:cachepath] :: resolving dependencies :: biz.aQute#bnd-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	validate = true
+[ivy:cachepath] 	refresh = false
+[ivy:cachepath] resolving dependencies for configuration 'default'
+[ivy:cachepath] == resolving dependencies for biz.aQute#bnd-caller;working [default]
+[ivy:cachepath] == resolving dependencies biz.aQute#bnd-caller;working->biz.aQute#bnd;1.50.0 [default->default]
+[ivy:cachepath] default: Checking cache for: dependency: biz.aQute#bnd;1.50.0 {default=[default]}
+[ivy:cachepath] don't use cache for biz.aQute#bnd;1.50.0: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/biz.aQute/bnd/1.50.0/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/biz.aQute/bnd/1.50.0/jars/bnd.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for biz.aQute#bnd;1.50.0
+[ivy:cachepath] main: Checking cache for: dependency: biz.aQute#bnd;1.50.0 {default=[default]}
+[ivy:cachepath] main: module revision found in cache: biz.aQute#bnd;1.50.0
+[ivy:cachepath] 	found biz.aQute#bnd;1.50.0 in public
+[ivy:cachepath] == resolving dependencies biz.aQute#bnd-caller;working->biz.aQute#bnd;1.50.0 [default->runtime]
+[ivy:cachepath] == resolving dependencies biz.aQute#bnd-caller;working->biz.aQute#bnd;1.50.0 [default->compile]
+[ivy:cachepath] == resolving dependencies biz.aQute#bnd-caller;working->biz.aQute#bnd;1.50.0 [default->master]
+[ivy:cachepath] 	resolved ivy file produced in cache
+[ivy:cachepath] :: downloading artifacts ::
+[ivy:cachepath] 	[NOT REQUIRED] biz.aQute#bnd;1.50.0!bnd.jar
+[ivy:cachepath] :: resolution report :: resolve 165ms :: artifacts dl 8ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+[ivy:cachepath] 	report for biz.aQute#bnd-caller;working default produced in /Users/maropu/.ivy2/cache/biz.aQute-bnd-caller-default.xml
+[ivy:cachepath] 	resolve done (165ms resolve - 8ms download)
+
+init:
+Overriding previous definition of property "ivy.version"
+[ivy:resolve] Execution environment profile JavaSE-1.2 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.3 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.4 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.5 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.6 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.7 loaded
+[ivy:resolve] Execution environment profile OSGi/Minimum-1.1 loaded
+[ivy:resolve] Execution environment profile JavaSE-1.8 loaded
+[ivy:resolve] Execution environment profile CDC-1.0/Foundation-1.0 loaded
+[ivy:resolve] Execution environment profile CDC-1.1/Foundation-1.1 loaded
+[ivy:resolve] Execution environment profile OSGi/Minimum-1.2 loaded
+[ivy:resolve] Execution environment profile OSGi/Minimum-1.0 loaded
+[ivy:resolve] using ivy parser to parse file:/Users/maropu/Repositories/lz4-java/ivy.xml
+[ivy:resolve] :: resolving dependencies :: org.lz4#lz4-java;1.8-SNAPSHOT
+[ivy:resolve] 	confs: [test]
+[ivy:resolve] 	validate = true
+[ivy:resolve] 	refresh = false
+[ivy:resolve] resolving dependencies for configuration 'test'
+[ivy:resolve] == resolving dependencies for org.lz4#lz4-java;1.8-SNAPSHOT [test]
+[ivy:resolve] == resolving dependencies for org.lz4#lz4-java;1.8-SNAPSHOT [default]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->*!sources!javadoc]
+[ivy:resolve] default: Checking cache for: dependency: com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 {test=[*, !sources, !javadoc]}
+[ivy:resolve] don't use cache for com.carrotsearch.randomizedtesting#junit4-ant;2.7.3: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.carrotsearch.randomizedtesting/junit4-ant/2.7.3/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.carrotsearch.randomizedtesting/junit4-ant/2.7.3/jars/junit4-ant.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for com.carrotsearch.randomizedtesting#junit4-ant;2.7.3
+[ivy:resolve] main: Checking cache for: dependency: com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 {test=[*, !sources, !javadoc]}
+[ivy:resolve] main: module revision found in cache: com.carrotsearch.randomizedtesting#junit4-ant;2.7.3
+[ivy:resolve] 	found com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 in public
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->runtime]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->compile]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->master]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant;1.9.11 [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: org.apache.ant#ant;1.9.11 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for org.apache.ant#ant;1.9.11: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant/1.9.11/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant/1.9.11/jars/ant.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.apache.ant#ant;1.9.11
+[ivy:resolve] main: Checking cache for: dependency: org.apache.ant#ant;1.9.11 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] main: module revision found in cache: org.apache.ant#ant;1.9.11
+[ivy:resolve] 	found org.apache.ant#ant;1.9.11 in public
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant;1.9.11 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant;1.9.11 [provided->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: org.apache.ant#ant-launcher;1.9.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for org.apache.ant#ant-launcher;1.9.11: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant-launcher/1.9.11/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant-launcher/1.9.11/jars/ant-launcher.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.apache.ant#ant-launcher;1.9.11
+[ivy:resolve] main: Checking cache for: dependency: org.apache.ant#ant-launcher;1.9.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: org.apache.ant#ant-launcher;1.9.11
+[ivy:resolve] 	found org.apache.ant#ant-launcher;1.9.11 in public
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [compile->compile(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [compile->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant;1.9.11->org.apache.ant#ant-launcher;1.9.11 [runtime->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant;1.9.11 [provided->provided(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant;1.9.11 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant-junit;1.9.11 [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: org.apache.ant#ant-junit;1.9.11 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for org.apache.ant#ant-junit;1.9.11: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant-junit/1.9.11/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.apache.ant/ant-junit/1.9.11/jars/ant-junit.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.apache.ant#ant-junit;1.9.11
+[ivy:resolve] main: Checking cache for: dependency: org.apache.ant#ant-junit;1.9.11 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] main: module revision found in cache: org.apache.ant#ant-junit;1.9.11
+[ivy:resolve] 	found org.apache.ant#ant-junit;1.9.11 in public
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant-junit;1.9.11 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant-junit;1.9.11 [provided->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->org.apache.ant#ant;1.9.11 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->org.apache.ant#ant;1.9.11 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: junit#junit;4.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for junit#junit;4.12: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/junit/junit/4.12/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/junit/junit/4.12/jars/junit.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for junit#junit;4.12
+[ivy:resolve] main: Checking cache for: dependency: junit#junit;4.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: junit#junit;4.12
+[ivy:resolve] 	found junit#junit;4.12 in default
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies junit#junit;4.12->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for org.hamcrest#hamcrest-core;1.3: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.hamcrest/hamcrest-core/1.3/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.hamcrest/hamcrest-core/1.3/jars/hamcrest-core.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.hamcrest#hamcrest-core;1.3
+[ivy:resolve] main: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: org.hamcrest#hamcrest-core;1.3
+[ivy:resolve] 	found org.hamcrest#hamcrest-core;1.3 in default
+[ivy:resolve] == resolving dependencies junit#junit;4.12->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [compile->compile]
+[ivy:resolve] == resolving dependencies junit#junit;4.12->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies junit#junit;4.12->org.hamcrest#hamcrest-core;1.3 [runtime->compile]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [compile->provided(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->org.apache.ant#ant;1.9.11 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->org.apache.ant#ant;1.9.11 [runtime->compile]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.apache.ant#ant-junit;1.9.11->junit#junit;4.12 [runtime->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant-junit;1.9.11 [provided->provided(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.apache.ant#ant-junit;1.9.11 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->junit#junit;4.12 [provided->master(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->junit#junit;4.12 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->junit#junit;4.12 [provided->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->junit#junit;4.12 [provided->provided(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->junit#junit;4.12 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.google.guava#guava;25.0-jre [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: com.google.guava#guava;25.0-jre {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for com.google.guava#guava;25.0-jre: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava/25.0-jre/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava/25.0-jre/jars/guava.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for com.google.guava#guava;25.0-jre
+[ivy:resolve] main: Checking cache for: dependency: com.google.guava#guava;25.0-jre {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava/25.0-jre/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava/25.0-jre/jars/guava.jar
+[ivy:resolve] 	shared: no ivy file nor artifact found for com.google.guava#guava;25.0-jre
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom
+[ivy:resolve] 	public: found md file for com.google.guava#guava;25.0-jre
+[ivy:resolve] 		=> https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom (25.0-jre)
+[ivy:resolve] downloading https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom ...
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom.sha1
+[ivy:resolve] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom
+[ivy:resolve] 	[SUCCESSFUL ] com.google.guava#guava;25.0-jre!guava.pom(pom.original) (807ms)
+[ivy:resolve] default: Checking cache for: dependency: com.google.guava#guava-parent;25.0-jre {}
+[ivy:resolve] don't use cache for com.google.guava#guava-parent;25.0-jre: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava-parent/25.0-jre/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava-parent/25.0-jre/jars/guava-parent.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for com.google.guava#guava-parent;25.0-jre
+[ivy:resolve] main: Checking cache for: dependency: com.google.guava#guava-parent;25.0-jre {}
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava-parent/25.0-jre/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava-parent/25.0-jre/jars/guava-parent.jar
+[ivy:resolve] 	shared: no ivy file nor artifact found for com.google.guava#guava-parent;25.0-jre
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom
+[ivy:resolve] 	public: found md file for com.google.guava#guava-parent;25.0-jre
+[ivy:resolve] 		=> https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom (25.0-jre)
+[ivy:resolve] downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom ...
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom.sha1
+[ivy:resolve] sha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.pom
+[ivy:resolve] 	[SUCCESSFUL ] com.google.guava#guava-parent;25.0-jre!guava-parent.pom(pom.original) (603ms)
+[ivy:resolve] default: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[ivy:resolve] don't use cache for org.sonatype.oss#oss-parent;9: checkModified=true
+[ivy:resolve] ERROR: unknown resolver null
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.sonatype.oss/oss-parent/9/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.sonatype.oss/oss-parent/9/jars/oss-parent.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.sonatype.oss#oss-parent;9
+[ivy:resolve] main: Checking cache for: dependency: org.sonatype.oss#oss-parent;9 {}
+[ivy:resolve] ERROR: unknown resolver null
+[ivy:resolve] main: module revision found in cache: org.sonatype.oss#oss-parent;9
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava-parent/25.0-jre/jars/guava-parent.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava-parent/25.0-jre/jars/guava-parent.jar
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.jar
+[ivy:resolve] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/google/guava/guava-parent/25.0-jre/guava-parent-25.0-jre.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava/25.0-jre/sources/guava.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava/25.0-jre/sources/guava.jar
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre-sources.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.google.guava/guava/25.0-jre/javadocs/guava.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/com.google.guava/guava/25.0-jre/javadocs/guava.jar
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre-javadoc.jar
+[ivy:resolve] 	found com.google.guava#guava;25.0-jre in public
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.google.guava#guava;25.0-jre [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.google.guava#guava;25.0-jre [provided->compile]
+[ivy:resolve] excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: com.google.errorprone#error_prone_annotations;2.1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: com.google.j2objc#j2objc-annotations;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: org.codehaus.mojo#animal-sniffer-annotations;1.14 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [compile->master(*)]
+[ivy:resolve] excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: com.google.errorprone#error_prone_annotations;2.1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: com.google.j2objc#j2objc-annotations;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: org.codehaus.mojo#animal-sniffer-annotations;1.14 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+[ivy:resolve] excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: com.google.errorprone#error_prone_annotations;2.1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: com.google.j2objc#j2objc-annotations;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: org.codehaus.mojo#animal-sniffer-annotations;1.14 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] default: Checking cache for: dependency: org.checkerframework#checker-compat-qual;2.0.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for org.checkerframework#checker-compat-qual;2.0.0: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.checkerframework/checker-compat-qual/2.0.0/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.checkerframework/checker-compat-qual/2.0.0/jars/checker-compat-qual.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.checkerframework#checker-compat-qual;2.0.0
+[ivy:resolve] main: Checking cache for: dependency: org.checkerframework#checker-compat-qual;2.0.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: org.checkerframework#checker-compat-qual;2.0.0
+[ivy:resolve] 	found org.checkerframework#checker-compat-qual;2.0.0 in public
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [compile->compile]
+[ivy:resolve] excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: com.google.errorprone#error_prone_annotations;2.1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: com.google.j2objc#j2objc-annotations;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] excluding dependency: org.codehaus.mojo#animal-sniffer-annotations;1.14 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies com.google.guava#guava;25.0-jre->org.checkerframework#checker-compat-qual;2.0.0 [runtime->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.google.guava#guava;25.0-jre [provided->provided(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.google.guava#guava;25.0-jre [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.ow2.asm#asm;6.2.1 [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: org.ow2.asm#asm;6.2.1 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for org.ow2.asm#asm;6.2.1: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2.asm/asm/6.2.1/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2.asm/asm/6.2.1/jars/asm.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.ow2.asm#asm;6.2.1
+[ivy:resolve] main: Checking cache for: dependency: org.ow2.asm#asm;6.2.1 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/org.ow2.asm/asm/6.2.1/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/org.ow2.asm/asm/6.2.1/jars/asm.jar
+[ivy:resolve] 	shared: no ivy file nor artifact found for org.ow2.asm#asm;6.2.1
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom
+[ivy:resolve] 	public: found md file for org.ow2.asm#asm;6.2.1
+[ivy:resolve] 		=> https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom (6.2.1)
+[ivy:resolve] downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom ...
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom
+[ivy:resolve] 	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom.sha1
+[ivy:resolve] sha1 OK for https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom
+[ivy:resolve] 	[SUCCESSFUL ] org.ow2.asm#asm;6.2.1!asm.pom(pom.original) (708ms)
+[ivy:resolve] default: Checking cache for: dependency: org.ow2#ow2;1.5 {}
+[ivy:resolve] don't use cache for org.ow2#ow2;1.5: checkModified=true
+[ivy:resolve] ERROR: unknown resolver null
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2/ow2/1.5/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2/ow2/1.5/jars/ow2.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.ow2#ow2;1.5
+[ivy:resolve] main: Checking cache for: dependency: org.ow2#ow2;1.5 {}
+[ivy:resolve] ERROR: unknown resolver null
+[ivy:resolve] main: module revision found in cache: org.ow2#ow2;1.5
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2.asm/asm/6.2.1/sources/asm.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/org.ow2.asm/asm/6.2.1/sources/asm.jar
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1-sources.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.ow2.asm/asm/6.2.1/javadocs/asm.jar
+[ivy:resolve] 		tried /Users/maropu/.ivy2/shared/org.ow2.asm/asm/6.2.1/javadocs/asm.jar
+[ivy:resolve] 		tried https://repo1.maven.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1-javadoc.jar
+[ivy:resolve] 	found org.ow2.asm#asm;6.2.1 in public
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.ow2.asm#asm;6.2.1 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.ow2.asm#asm;6.2.1 [provided->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.ow2.asm#asm;6.2.1 [provided->provided(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.ow2.asm#asm;6.2.1 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.simpleframework#simple-xml;2.7.1 [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: org.simpleframework#simple-xml;2.7.1 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for org.simpleframework#simple-xml;2.7.1: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.simpleframework/simple-xml/2.7.1/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/org.simpleframework/simple-xml/2.7.1/jars/simple-xml.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for org.simpleframework#simple-xml;2.7.1
+[ivy:resolve] main: Checking cache for: dependency: org.simpleframework#simple-xml;2.7.1 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] main: module revision found in cache: org.simpleframework#simple-xml;2.7.1
+[ivy:resolve] 	found org.simpleframework#simple-xml;2.7.1 in public
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.simpleframework#simple-xml;2.7.1 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.simpleframework#simple-xml;2.7.1 [provided->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: stax#stax-api;1.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for stax#stax-api;1.0.1: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/stax/stax-api/1.0.1/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/stax/stax-api/1.0.1/jars/stax-api.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for stax#stax-api;1.0.1
+[ivy:resolve] main: Checking cache for: dependency: stax#stax-api;1.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: stax#stax-api;1.0.1
+[ivy:resolve] 	found stax#stax-api;1.0.1 in default
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [compile->compile]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: stax#stax;1.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for stax#stax;1.2.0: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/stax/stax/1.2.0/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/stax/stax/1.2.0/jars/stax.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for stax#stax;1.2.0
+[ivy:resolve] main: Checking cache for: dependency: stax#stax;1.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: stax#stax;1.2.0
+[ivy:resolve] 	found stax#stax;1.2.0 in public
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [compile->compile(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies stax#stax;1.2.0->stax#stax-api;1.0.1 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies stax#stax;1.2.0->stax#stax-api;1.0.1 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [compile->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies stax#stax;1.2.0->stax#stax-api;1.0.1 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies stax#stax;1.2.0->stax#stax-api;1.0.1 [runtime->compile]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [compile->master(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] default: Checking cache for: dependency: xpp3#xpp3;1.1.3.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] don't use cache for xpp3#xpp3;1.1.3.3: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/xpp3/xpp3/1.1.3.3/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/xpp3/xpp3/1.1.3.3/jars/xpp3.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for xpp3#xpp3;1.1.3.3
+[ivy:resolve] main: Checking cache for: dependency: xpp3#xpp3;1.1.3.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:resolve] main: module revision found in cache: xpp3#xpp3;1.1.3.3
+[ivy:resolve] 	found xpp3#xpp3;1.1.3.3 in public
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [compile->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [compile->compile]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax-api;1.0.1 [runtime->compile]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->stax#stax;1.2.0 [runtime->compile]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies org.simpleframework#simple-xml;2.7.1->xpp3#xpp3;1.1.3.3 [runtime->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.simpleframework#simple-xml;2.7.1 [provided->provided(*)]
+[ivy:resolve] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.12 {test=[runtime(*), master(*)]}
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->org.simpleframework#simple-xml;2.7.1 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 [provided->master(*)]
+[ivy:resolve] default: Checking cache for: dependency: com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] don't use cache for com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3: checkModified=true
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.7.3/ivys/ivy.xml
+[ivy:resolve] 		tried /Users/maropu/.ivy2/local/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.7.3/jars/randomizedtesting-runner.jar
+[ivy:resolve] 	local: no ivy file nor artifact found for com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3
+[ivy:resolve] main: Checking cache for: dependency: com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+[ivy:resolve] main: module revision found in cache: com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3
+[ivy:resolve] 	found com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 in public
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 [provided->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 [provided->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3->junit#junit;4.12 [compile->master(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3->junit#junit;4.12 [compile->compile(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3->junit#junit;4.12 [runtime->runtime(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3->junit#junit;4.12 [runtime->compile]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 [provided->provided(*)]
+[ivy:resolve] == resolving dependencies com.carrotsearch.randomizedtesting#junit4-ant;2.7.3->com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3 [provided->compile(*)]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->compile]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->default]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->runtime]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->compile]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->master]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->system]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->provided]
+[ivy:resolve] == resolving dependencies org.lz4#lz4-java;1.8-SNAPSHOT->com.carrotsearch.randomizedtesting#junit4-ant;2.7.3 [test->optional]
+[ivy:resolve] 	resolved ivy file produced in cache
+[ivy:resolve] :: downloading artifacts ::
+[ivy:resolve] 	[NOT REQUIRED] com.carrotsearch.randomizedtesting#junit4-ant;2.7.3!junit4-ant.jar
+[ivy:resolve] 	[NOT REQUIRED] org.apache.ant#ant;1.9.11!ant.jar
+[ivy:resolve] 	[NOT REQUIRED] org.apache.ant#ant-junit;1.9.11!ant-junit.jar
+[ivy:resolve] 	[NOT REQUIRED] junit#junit;4.12!junit.jar
+[ivy:resolve] 	[NOT REQUIRED] com.google.guava#guava;25.0-jre!guava.jar(bundle)
+[ivy:resolve] 	[NOT REQUIRED] org.ow2.asm#asm;6.2.1!asm.jar
+[ivy:resolve] 	[NOT REQUIRED] org.simpleframework#simple-xml;2.7.1!simple-xml.jar
+[ivy:resolve] 	[NOT REQUIRED] com.carrotsearch.randomizedtesting#randomizedtesting-runner;2.7.3!randomizedtesting-runner.jar
+[ivy:resolve] 	[NOT REQUIRED] org.apache.ant#ant-launcher;1.9.11!ant-launcher.jar
+[ivy:resolve] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar
+[ivy:resolve] 	[NOT REQUIRED] org.checkerframework#checker-compat-qual;2.0.0!checker-compat-qual.jar
+[ivy:resolve] 	[NOT REQUIRED] stax#stax-api;1.0.1!stax-api.jar
+[ivy:resolve] 	[NOT REQUIRED] stax#stax;1.2.0!stax.jar
+[ivy:resolve] 	[NOT REQUIRED] xpp3#xpp3;1.1.3.3!xpp3.jar
+[ivy:resolve] :: resolution report :: resolve 5329ms :: artifacts dl 9ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|       test       |   14  |   2   |   2   |   0   ||   14  |   0   |
+	---------------------------------------------------------------------
+[ivy:resolve] 	report for org.lz4#lz4-java;1.8-SNAPSHOT test produced in /Users/maropu/.ivy2/cache/org.lz4-lz4-java-test.xml
+[ivy:resolve] 	resolve done (5329ms resolve - 9ms download)
+[ivy:resolve] 
+[ivy:resolve] 
+[ivy:resolve] :: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+Overriding previous definition of property "ivy.version"
+[ivy:retrieve] :: retrieving :: org.lz4#lz4-java
+[ivy:retrieve] 	checkUpToDate=true
+[ivy:retrieve] 	confs: [test]
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/hamcrest-core-1.3.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/com.carrotsearch.randomizedtesting/junit4-ant/jars/junit4-ant-2.7.3.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/junit4-ant-2.7.3.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.11.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/ant-launcher-1.9.11.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/com.carrotsearch.randomizedtesting/randomizedtesting-runner/jars/randomizedtesting-runner-2.7.3.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/randomizedtesting-runner-2.7.3.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.checkerframework/checker-compat-qual/jars/checker-compat-qual-2.0.0.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/checker-compat-qual-2.0.0.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.simpleframework/simple-xml/jars/simple-xml-2.7.1.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/simple-xml-2.7.1.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/stax/stax-api/jars/stax-api-1.0.1.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/stax-api-1.0.1.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.apache.ant/ant-junit/jars/ant-junit-1.9.11.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/ant-junit-1.9.11.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/com.google.guava/guava/bundles/guava-25.0-jre.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/guava-25.0-jre.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/xpp3/xpp3/jars/xpp3-1.1.3.3.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/xpp3-1.1.3.3.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.apache.ant/ant/jars/ant-1.9.11.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/ant-1.9.11.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/junit/junit/jars/junit-4.12.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/junit-4.12.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/org.ow2.asm/asm/jars/asm-6.2.1.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/asm-6.2.1.jar
+[ivy:retrieve] 	retrieving /Users/maropu/.ivy2/cache/stax/stax/jars/stax-1.2.0.jar
+[ivy:retrieve] 		to /Users/maropu/Repositories/lz4-java/lib/stax-1.2.0.jar
+[ivy:retrieve] 	14 artifacts copied, 0 already retrieved (7758kB/45ms)
+[ivy:retrieve] 	retrieve done (45ms)
+
+generate-sources:
+Overriding previous definition of property "ivy.version"
+[ivy:cachepath] using inline mode to resolve org.mvel mvel2 2.3.2.Final (default)
+[ivy:cachepath] no resolved descriptor found: launching default resolve
+Overriding previous definition of property "ivy.version"
+[ivy:cachepath] :: resolving dependencies :: org.mvel#mvel2-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	validate = true
+[ivy:cachepath] 	refresh = false
+[ivy:cachepath] resolving dependencies for configuration 'default'
+[ivy:cachepath] == resolving dependencies for org.mvel#mvel2-caller;working [default]
+[ivy:cachepath] == resolving dependencies org.mvel#mvel2-caller;working->org.mvel#mvel2;2.3.2.Final [default->default]
+[ivy:cachepath] default: Checking cache for: dependency: org.mvel#mvel2;2.3.2.Final {default=[default]}
+[ivy:cachepath] don't use cache for org.mvel#mvel2;2.3.2.Final: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.mvel/mvel2/2.3.2.Final/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.mvel/mvel2/2.3.2.Final/jars/mvel2.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for org.mvel#mvel2;2.3.2.Final
+[ivy:cachepath] main: Checking cache for: dependency: org.mvel#mvel2;2.3.2.Final {default=[default]}
+[ivy:cachepath] main: module revision found in cache: org.mvel#mvel2;2.3.2.Final
+[ivy:cachepath] 	found org.mvel#mvel2;2.3.2.Final in public
+[ivy:cachepath] == resolving dependencies org.mvel#mvel2-caller;working->org.mvel#mvel2;2.3.2.Final [default->runtime]
+[ivy:cachepath] == resolving dependencies org.mvel#mvel2-caller;working->org.mvel#mvel2;2.3.2.Final [default->compile]
+[ivy:cachepath] == resolving dependencies org.mvel#mvel2-caller;working->org.mvel#mvel2;2.3.2.Final [default->master]
+[ivy:cachepath] 	resolved ivy file produced in cache
+[ivy:cachepath] :: downloading artifacts ::
+[ivy:cachepath] 	[NOT REQUIRED] org.mvel#mvel2;2.3.2.Final!mvel2.jar
+[ivy:cachepath] :: resolution report :: resolve 15ms :: artifacts dl 1ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+[ivy:cachepath] 	report for org.mvel#mvel2-caller;working default produced in /Users/maropu/.ivy2/cache/org.mvel-mvel2-caller-default.xml
+[ivy:cachepath] 	resolve done (15ms resolve - 1ms download)
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/java
+     [java] Executing '/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java' with arguments:
+     [java] '-Dout.dir=/Users/maropu/Repositories/lz4-java/build/java'
+     [java] '-classpath'
+     [java] '/Users/maropu/.ivy2/cache/org.mvel/mvel2/jars/mvel2-2.3.2.Final.jar'
+     [java] 'org.mvel2.sh.Main'
+     [java] '/Users/maropu/Repositories/lz4-java/src/build/gen_sources.mvel'
+     [java] 
+     [java] The ' characters around the executable and arguments are
+     [java] not part of the command.
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeFastDecompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeSafeDecompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeFastDecompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeSafeDecompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeCompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeCompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4HCJavaSafeCompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash32JavaSafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash32JavaUnsafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash64JavaSafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash64JavaUnsafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash32JavaSafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash32JavaUnsafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash64JavaSafe.java
+     [java] Generating /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash64JavaUnsafe.java
+
+compile-java:
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/classes
+    [javac] net/jpountz/lz4/LZ4BlockInputStream.java added as net/jpountz/lz4/LZ4BlockInputStream.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4BlockOutputStream.java added as net/jpountz/lz4/LZ4BlockOutputStream.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4ByteBufferUtils.java added as net/jpountz/lz4/LZ4ByteBufferUtils.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Compressor.java added as net/jpountz/lz4/LZ4Compressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4CompressorWithLength.java added as net/jpountz/lz4/LZ4CompressorWithLength.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Constants.java added as net/jpountz/lz4/LZ4Constants.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Decompressor.java added as net/jpountz/lz4/LZ4Decompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4DecompressorWithLength.java added as net/jpountz/lz4/LZ4DecompressorWithLength.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Exception.java added as net/jpountz/lz4/LZ4Exception.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Factory.java added as net/jpountz/lz4/LZ4Factory.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4FastDecompressor.java added as net/jpountz/lz4/LZ4FastDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4FrameInputStream.java added as net/jpountz/lz4/LZ4FrameInputStream.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4FrameOutputStream.java added as net/jpountz/lz4/LZ4FrameOutputStream.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4HCJNICompressor.java added as net/jpountz/lz4/LZ4HCJNICompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JNI.java added as net/jpountz/lz4/LZ4JNI.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JNICompressor.java added as net/jpountz/lz4/LZ4JNICompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JNIFastDecompressor.java added as net/jpountz/lz4/LZ4JNIFastDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JNISafeDecompressor.java added as net/jpountz/lz4/LZ4JNISafeDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4SafeDecompressor.java added as net/jpountz/lz4/LZ4SafeDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4SafeUtils.java added as net/jpountz/lz4/LZ4SafeUtils.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4UnknownSizeDecompressor.java added as net/jpountz/lz4/LZ4UnknownSizeDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4Utils.java added as net/jpountz/lz4/LZ4Utils.class doesn't exist.
+    [javac] /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/package.html skipped - don't know how to handle it
+    [javac] net/jpountz/util/ByteBufferUtils.java added as net/jpountz/util/ByteBufferUtils.class doesn't exist.
+    [javac] net/jpountz/util/Native.java added as net/jpountz/util/Native.class doesn't exist.
+    [javac] net/jpountz/util/SafeUtils.java added as net/jpountz/util/SafeUtils.class doesn't exist.
+    [javac] net/jpountz/util/Utils.java added as net/jpountz/util/Utils.class doesn't exist.
+    [javac] /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/util/package.html skipped - don't know how to handle it
+    [javac] net/jpountz/xxhash/AbstractStreamingXXHash32Java.java added as net/jpountz/xxhash/AbstractStreamingXXHash32Java.class doesn't exist.
+    [javac] net/jpountz/xxhash/AbstractStreamingXXHash64Java.java added as net/jpountz/xxhash/AbstractStreamingXXHash64Java.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash32.java added as net/jpountz/xxhash/StreamingXXHash32.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash32JNI.java added as net/jpountz/xxhash/StreamingXXHash32JNI.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash64.java added as net/jpountz/xxhash/StreamingXXHash64.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash64JNI.java added as net/jpountz/xxhash/StreamingXXHash64JNI.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash32.java added as net/jpountz/xxhash/XXHash32.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash32JNI.java added as net/jpountz/xxhash/XXHash32JNI.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash64.java added as net/jpountz/xxhash/XXHash64.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash64JNI.java added as net/jpountz/xxhash/XXHash64JNI.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHashConstants.java added as net/jpountz/xxhash/XXHashConstants.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHashFactory.java added as net/jpountz/xxhash/XXHashFactory.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHashJNI.java added as net/jpountz/xxhash/XXHashJNI.class doesn't exist.
+    [javac] /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/package.html skipped - don't know how to handle it
+    [javac] /Users/maropu/Repositories/lz4-java/src/java/overview.html skipped - don't know how to handle it
+    [javac] Compiling 39 source files to /Users/maropu/Repositories/lz4-java/build/classes
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-d'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/classes'
+    [javac] '-classpath'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/classes'
+    [javac] '-sourcepath'
+    [javac] '/Users/maropu/Repositories/lz4-java/src/java'
+    [javac] '-target'
+    [javac] '1.7'
+    [javac] '-encoding'
+    [javac] 'UTF-8'
+    [javac] '-g'
+    [javac] '-source'
+    [javac] '1.7'
+    [javac] '-h'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/jni-headers'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4BlockInputStream.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4BlockOutputStream.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4ByteBufferUtils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Compressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4CompressorWithLength.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Constants.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Decompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4DecompressorWithLength.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Exception.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Factory.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4FastDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4FrameInputStream.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4FrameOutputStream.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4HCJNICompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4JNI.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4JNICompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4JNIFastDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4JNISafeDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4SafeDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4SafeUtils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4UnknownSizeDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/lz4/LZ4Utils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/util/ByteBufferUtils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/util/Native.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/util/SafeUtils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/util/Utils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/AbstractStreamingXXHash32Java.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/AbstractStreamingXXHash64Java.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/StreamingXXHash32.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/StreamingXXHash32JNI.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/StreamingXXHash64.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/StreamingXXHash64JNI.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHash32.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHash32JNI.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHash64.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHash64JNI.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHashConstants.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHashFactory.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java/net/jpountz/xxhash/XXHashJNI.java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/unsafe-classes
+    [javac] net/jpountz/lz4/LZ4UnsafeUtils.java added as net/jpountz/lz4/LZ4UnsafeUtils.class doesn't exist.
+    [javac] net/jpountz/util/UnsafeUtils.java added as net/jpountz/util/UnsafeUtils.class doesn't exist.
+    [javac] Compiling 2 source files to /Users/maropu/Repositories/lz4-java/build/unsafe-classes
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-d'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/unsafe-classes'
+    [javac] '-classpath'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/unsafe-classes:/Users/maropu/Repositories/lz4-java/build/classes'
+    [javac] '-sourcepath'
+    [javac] '/Users/maropu/Repositories/lz4-java/src/java-unsafe'
+    [javac] '-target'
+    [javac] '1.7'
+    [javac] '-encoding'
+    [javac] 'UTF-8'
+    [javac] '-g'
+    [javac] '-source'
+    [javac] '1.7'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/lz4/LZ4UnsafeUtils.java
+    [javac]     /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/util/UnsafeUtils.java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/util/UnsafeUtils.java:22: warning: Unsafe is internal proprietary API and may be removed in a future release
+    [javac] import sun.misc.Unsafe;
+    [javac]                ^
+    [javac] /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/util/UnsafeUtils.java:27: warning: Unsafe is internal proprietary API and may be removed in a future release
+    [javac]   private static final Unsafe UNSAFE;
+    [javac]                        ^
+    [javac] /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/util/UnsafeUtils.java:37: warning: Unsafe is internal proprietary API and may be removed in a future release
+    [javac]       Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
+    [javac]                         ^
+    [javac] /Users/maropu/Repositories/lz4-java/src/java-unsafe/net/jpountz/util/UnsafeUtils.java:39: warning: Unsafe is internal proprietary API and may be removed in a future release
+    [javac]       UNSAFE = (Unsafe) theUnsafe.get(null);
+    [javac]                 ^
+    [javac] 5 warnings
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/generated-classes
+    [javac] net/jpountz/lz4/LZ4HCJavaSafeCompressor.java added as net/jpountz/lz4/LZ4HCJavaSafeCompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.java added as net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaSafeCompressor.java added as net/jpountz/lz4/LZ4JavaSafeCompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaSafeFastDecompressor.java added as net/jpountz/lz4/LZ4JavaSafeFastDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaSafeSafeDecompressor.java added as net/jpountz/lz4/LZ4JavaSafeSafeDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaUnsafeCompressor.java added as net/jpountz/lz4/LZ4JavaUnsafeCompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaUnsafeFastDecompressor.java added as net/jpountz/lz4/LZ4JavaUnsafeFastDecompressor.class doesn't exist.
+    [javac] net/jpountz/lz4/LZ4JavaUnsafeSafeDecompressor.java added as net/jpountz/lz4/LZ4JavaUnsafeSafeDecompressor.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash32JavaSafe.java added as net/jpountz/xxhash/StreamingXXHash32JavaSafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash32JavaUnsafe.java added as net/jpountz/xxhash/StreamingXXHash32JavaUnsafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash64JavaSafe.java added as net/jpountz/xxhash/StreamingXXHash64JavaSafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/StreamingXXHash64JavaUnsafe.java added as net/jpountz/xxhash/StreamingXXHash64JavaUnsafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash32JavaSafe.java added as net/jpountz/xxhash/XXHash32JavaSafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash32JavaUnsafe.java added as net/jpountz/xxhash/XXHash32JavaUnsafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash64JavaSafe.java added as net/jpountz/xxhash/XXHash64JavaSafe.class doesn't exist.
+    [javac] net/jpountz/xxhash/XXHash64JavaUnsafe.java added as net/jpountz/xxhash/XXHash64JavaUnsafe.class doesn't exist.
+    [javac] Compiling 16 source files to /Users/maropu/Repositories/lz4-java/build/generated-classes
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-d'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/generated-classes'
+    [javac] '-classpath'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/generated-classes:/Users/maropu/Repositories/lz4-java/build/classes:/Users/maropu/Repositories/lz4-java/build/unsafe-classes'
+    [javac] '-sourcepath'
+    [javac] '/Users/maropu/Repositories/lz4-java/build/java'
+    [javac] '-target'
+    [javac] '1.7'
+    [javac] '-encoding'
+    [javac] 'UTF-8'
+    [javac] '-g'
+    [javac] '-source'
+    [javac] '1.7'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4HCJavaSafeCompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeCompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeFastDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaSafeSafeDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeCompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeFastDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/lz4/LZ4JavaUnsafeSafeDecompressor.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash32JavaSafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash32JavaUnsafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash64JavaSafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/StreamingXXHash64JavaUnsafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash32JavaSafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash32JavaUnsafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash64JavaSafe.java
+    [javac]     /Users/maropu/Repositories/lz4-java/build/java/net/jpountz/xxhash/XXHash64JavaUnsafe.java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] 1 warning
+
+install-cpptasks:
+Overriding previous definition of property "ivy.version"
+[ivy:cachepath] using inline mode to resolve ant-contrib cpptasks 1.0b5 (default)
+[ivy:cachepath] no resolved descriptor found: launching default resolve
+Overriding previous definition of property "ivy.version"
+[ivy:cachepath] :: resolving dependencies :: ant-contrib#cpptasks-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	validate = true
+[ivy:cachepath] 	refresh = false
+[ivy:cachepath] resolving dependencies for configuration 'default'
+[ivy:cachepath] == resolving dependencies for ant-contrib#cpptasks-caller;working [default]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks-caller;working->ant-contrib#cpptasks;1.0b5 [default->default]
+[ivy:cachepath] default: Checking cache for: dependency: ant-contrib#cpptasks;1.0b5 {default=[default]}
+[ivy:cachepath] don't use cache for ant-contrib#cpptasks;1.0b5: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant-contrib/cpptasks/1.0b5/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant-contrib/cpptasks/1.0b5/jars/cpptasks.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for ant-contrib#cpptasks;1.0b5
+[ivy:cachepath] main: Checking cache for: dependency: ant-contrib#cpptasks;1.0b5 {default=[default]}
+[ivy:cachepath] main: module revision found in cache: ant-contrib#cpptasks;1.0b5
+[ivy:cachepath] 	found ant-contrib#cpptasks;1.0b5 in public
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks-caller;working->ant-contrib#cpptasks;1.0b5 [default->runtime]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks-caller;working->ant-contrib#cpptasks;1.0b5 [default->compile]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [compile->master(*)]
+[ivy:cachepath] default: Checking cache for: dependency: ant#ant;1.6.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] don't use cache for ant#ant;1.6.5: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant/ant/1.6.5/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant/ant/1.6.5/jars/ant.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for ant#ant;1.6.5
+[ivy:cachepath] main: Checking cache for: dependency: ant#ant;1.6.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/ant/ant/1.6.5/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/ant/ant/1.6.5/jars/ant.jar
+[ivy:cachepath] 	shared: no ivy file nor artifact found for ant#ant;1.6.5
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom
+[ivy:cachepath] 	public: found md file for ant#ant;1.6.5
+[ivy:cachepath] 		=> https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom (1.6.5)
+[ivy:cachepath] downloading https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom ...
+[ivy:cachepath] 	public: downloading https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom
+[ivy:cachepath] 	public: downloading https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom.sha1
+[ivy:cachepath] sha1 OK for https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom
+[ivy:cachepath] 	[SUCCESSFUL ] ant#ant;1.6.5!ant.pom(pom.original) (814ms)
+[ivy:cachepath] default: Checking cache for: dependency: org.apache#apache;4 {}
+[ivy:cachepath] don't use cache for org.apache#apache;4: checkModified=true
+[ivy:cachepath] ERROR: unknown resolver null
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.apache/apache/4/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.apache/apache/4/jars/apache.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for org.apache#apache;4
+[ivy:cachepath] main: Checking cache for: dependency: org.apache#apache;4 {}
+[ivy:cachepath] ERROR: unknown resolver null
+[ivy:cachepath] main: module revision found in cache: org.apache#apache;4
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant/ant/1.6.5/sources/ant.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/ant/ant/1.6.5/sources/ant.jar
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5-sources.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/ant/ant/1.6.5/javadocs/ant.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/ant/ant/1.6.5/javadocs/ant.jar
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5-javadoc.jar
+[ivy:cachepath] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5-javadoc.jar
+[ivy:cachepath] 	found ant#ant;1.6.5 in public
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [compile->compile(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [compile->runtime(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [compile->compile]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [compile->master(*)]
+[ivy:cachepath] default: Checking cache for: dependency: xerces#xercesImpl;2.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] don't use cache for xerces#xercesImpl;2.8.1: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xerces/xercesImpl/2.8.1/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xerces/xercesImpl/2.8.1/jars/xercesImpl.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for xerces#xercesImpl;2.8.1
+[ivy:cachepath] main: Checking cache for: dependency: xerces#xercesImpl;2.8.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/xerces/xercesImpl/2.8.1/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/xerces/xercesImpl/2.8.1/jars/xercesImpl.jar
+[ivy:cachepath] 	shared: no ivy file nor artifact found for xerces#xercesImpl;2.8.1
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom
+[ivy:cachepath] 	public: found md file for xerces#xercesImpl;2.8.1
+[ivy:cachepath] 		=> https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom (2.8.1)
+[ivy:cachepath] downloading https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom ...
+[ivy:cachepath] 	public: downloading https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom
+[ivy:cachepath] 	public: downloading https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom.sha1
+[ivy:cachepath] sha1 OK for https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.pom
+[ivy:cachepath] 	[SUCCESSFUL ] xerces#xercesImpl;2.8.1!xercesImpl.pom(pom.original) (617ms)
+[ivy:cachepath] default: Checking cache for: dependency: org.apache#apache;3 {}
+[ivy:cachepath] don't use cache for org.apache#apache;3: checkModified=true
+[ivy:cachepath] ERROR: unknown resolver null
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.apache/apache/3/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/org.apache/apache/3/jars/apache.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for org.apache#apache;3
+[ivy:cachepath] main: Checking cache for: dependency: org.apache#apache;3 {}
+[ivy:cachepath] ERROR: unknown resolver null
+[ivy:cachepath] main: module revision found in cache: org.apache#apache;3
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xerces/xercesImpl/2.8.1/sources/xercesImpl.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/xerces/xercesImpl/2.8.1/sources/xercesImpl.jar
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1-sources.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xerces/xercesImpl/2.8.1/javadocs/xercesImpl.jar
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/shared/xerces/xercesImpl/2.8.1/javadocs/xercesImpl.jar
+[ivy:cachepath] 		tried https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1-javadoc.jar
+[ivy:cachepath] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1-javadoc.jar
+[ivy:cachepath] 	found xerces#xercesImpl;2.8.1 in public
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [compile->compile(*)]
+[ivy:cachepath] == resolving dependencies xerces#xercesImpl;2.8.1->xml-apis#xml-apis;1.3.03 [compile->master(*)]
+[ivy:cachepath] default: Checking cache for: dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] don't use cache for xml-apis#xml-apis;1.3.03: checkModified=true
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xml-apis/xml-apis/1.3.03/ivys/ivy.xml
+[ivy:cachepath] 		tried /Users/maropu/.ivy2/local/xml-apis/xml-apis/1.3.03/jars/xml-apis.jar
+[ivy:cachepath] 	local: no ivy file nor artifact found for xml-apis#xml-apis;1.3.03
+[ivy:cachepath] main: Checking cache for: dependency: xml-apis#xml-apis;1.3.03 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[ivy:cachepath] main: module revision found in cache: xml-apis#xml-apis;1.3.03
+[ivy:cachepath] 	found xml-apis#xml-apis;1.3.03 in public
+[ivy:cachepath] == resolving dependencies xerces#xercesImpl;2.8.1->xml-apis#xml-apis;1.3.03 [compile->compile(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [compile->runtime(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [compile->compile]
+[ivy:cachepath] == resolving dependencies xerces#xercesImpl;2.8.1->xml-apis#xml-apis;1.3.03 [runtime->runtime(*)]
+[ivy:cachepath] == resolving dependencies xerces#xercesImpl;2.8.1->xml-apis#xml-apis;1.3.03 [runtime->compile]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [runtime->runtime(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->ant#ant;1.6.5 [runtime->compile]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [runtime->runtime(*)]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks;1.0b5->xerces#xercesImpl;2.8.1 [runtime->compile]
+[ivy:cachepath] == resolving dependencies ant-contrib#cpptasks-caller;working->ant-contrib#cpptasks;1.0b5 [default->master]
+[ivy:cachepath] 	resolved ivy file produced in cache
+[ivy:cachepath] :: downloading artifacts ::
+[ivy:cachepath] 	[NOT REQUIRED] ant-contrib#cpptasks;1.0b5!cpptasks.jar
+[ivy:cachepath] 	[NOT REQUIRED] ant#ant;1.6.5!ant.jar
+[ivy:cachepath] 	[NOT REQUIRED] xerces#xercesImpl;2.8.1!xercesImpl.jar
+[ivy:cachepath] 	[NOT REQUIRED] xml-apis#xml-apis;1.3.03!xml-apis.jar
+[ivy:cachepath] :: resolution report :: resolve 2731ms :: artifacts dl 2ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   4   |   2   |   2   |   0   ||   4   |   0   |
+	---------------------------------------------------------------------
+[ivy:cachepath] 	report for ant-contrib#cpptasks-caller;working default produced in /Users/maropu/.ivy2/cache/ant-contrib-cpptasks-caller-default.xml
+[ivy:cachepath] 	resolve done (2731ms resolve - 2ms download)
+[ivy:cachepath] 
+[ivy:cachepath] 
+[ivy:cachepath] :: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+parsing buildfile jar:file:/Users/maropu/.ivy2/cache/ant-contrib/cpptasks/jars/cpptasks-1.0b5.jar!/net/sf/antcontrib/cpptasks/antlib.xml with URI = jar:file:/Users/maropu/.ivy2/cache/ant-contrib/cpptasks/jars/cpptasks-1.0b5.jar!/net/sf/antcontrib/cpptasks/antlib.xml from a zip file
+
+check-skip-jni-or-java10+:
+Property "skip.jni" has not been set
+Property "java10+" has not been set
+
+generate-headers:
+Property "skip.jni.or.java10+" has not been set
+    [mkdir] Skipping /Users/maropu/Repositories/lz4-java/build/jni-headers because it already exists.
+    [javah] Compilation arguments:
+    [javah] '-d'
+    [javah] '/Users/maropu/Repositories/lz4-java/build/jni-headers'
+    [javah] '-classpath'
+    [javah] '/Users/maropu/Repositories/lz4-java/build/classes'
+    [javah] 
+    [javah] The ' characters around the executable and arguments are
+    [javah] not part of the command.
+    [javah] Classes to be compiled:
+    [javah]     net.jpountz.lz4.LZ4JNI
+    [javah]     net.jpountz.xxhash.XXHashJNI
+    [javah] Running /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/bin/javah
+
+compile-jni:
+Property "skip.jni" has not been set
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/objects
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/jni/net/jpountz/util/darwin/x86_64
+[antlib:net.sf.antcontrib.cpptasks] Could not load definitions from resource net/sf/antcontrib/cpptasks/antlib.xml. It could not be found.
+[cpptasks:cc] 5 total files to be compiled.
+[cpptasks:cc] gcc -mmacosx-version-min=10.12 -c -O3 -fPIC -I/Users/maropu/Repositories/lz4-java/src/lz4/lib -I/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/include/darwin -I/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/include -I/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/include/darwin -I/Users/maropu/Repositories/lz4-java/build/jni-headers /Users/maropu/Repositories/lz4-java/src/jni/net_jpountz_lz4_LZ4JNI.c /Users/maropu/Repositories/lz4-java/src/lz4/lib/xxhash.c /Users/maropu/Repositories/lz4-java/src/lz4/lib/lz4.c /Users/maropu/Repositories/lz4-java/src/lz4/lib/lz4hc.c /Users/maropu/Repositories/lz4-java/src/jni/net_jpountz_xxhash_XXHashJNI.c
+[cpptasks:cc] Starting link
+[cpptasks:cc] gcc -prebind -dynamiclib -o liblz4-java.dylib ../../../../../../objects/net_jpountz_lz4_LZ4JNI.o ../../../../../../objects/xxhash.o ../../../../../../objects/lz4.o ../../../../../../objects/lz4hc.o ../../../../../../objects/net_jpountz_xxhash_XXHashJNI.o
+
+compile:
+
+-jar:
+Property "lz4-pure-java" has not been set
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/dist
+      [jar] Building jar: /Users/maropu/Repositories/lz4-java/dist/lz4-java.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory net/
+      [jar] adding directory net/jpountz/
+      [jar] adding directory net/jpountz/util/
+      [jar] adding directory net/jpountz/util/darwin/
+      [jar] adding directory net/jpountz/util/darwin/x86_64/
+      [jar] adding directory net/jpountz/util/linux/
+      [jar] adding directory net/jpountz/util/linux/aarch64/
+      [jar] adding directory net/jpountz/util/linux/amd64/
+      [jar] adding directory net/jpountz/util/linux/i386/
+      [jar] adding directory net/jpountz/util/linux/ppc64le/
+      [jar] adding directory net/jpountz/util/linux/s390x/
+      [jar] adding directory net/jpountz/util/win32/
+      [jar] adding directory net/jpountz/util/win32/amd64/
+      [jar] adding entry net/jpountz/util/darwin/x86_64/liblz4-java.dylib
+      [jar] adding entry net/jpountz/util/linux/aarch64/liblz4-java.so
+      [jar] adding entry net/jpountz/util/linux/amd64/liblz4-java.so
+      [jar] adding entry net/jpountz/util/linux/i386/liblz4-java.so
+      [jar] adding entry net/jpountz/util/linux/ppc64le/liblz4-java.so
+      [jar] adding entry net/jpountz/util/linux/s390x/liblz4-java.so
+      [jar] adding entry net/jpountz/util/win32/amd64/liblz4-java.so
+      [jar] adding directory net/jpountz/lz4/
+      [jar] adding directory net/jpountz/xxhash/
+      [jar] adding entry net/jpountz/lz4/LZ4BlockInputStream.class
+      [jar] adding entry net/jpountz/lz4/LZ4BlockOutputStream.class
+      [jar] adding entry net/jpountz/lz4/LZ4ByteBufferUtils$Match.class
+      [jar] adding entry net/jpountz/lz4/LZ4ByteBufferUtils.class
+      [jar] adding entry net/jpountz/lz4/LZ4Compressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4CompressorWithLength.class
+      [jar] adding entry net/jpountz/lz4/LZ4Constants.class
+      [jar] adding entry net/jpountz/lz4/LZ4Decompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4DecompressorWithLength.class
+      [jar] adding entry net/jpountz/lz4/LZ4Exception.class
+      [jar] adding entry net/jpountz/lz4/LZ4Factory.class
+      [jar] adding entry net/jpountz/lz4/LZ4FastDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameInputStream.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$1.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$BD.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$BLOCKSIZE.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$FLG$Bits.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$FLG.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream$FrameInfo.class
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.class
+      [jar] adding entry net/jpountz/lz4/LZ4HCJNICompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JNI.class
+      [jar] adding entry net/jpountz/lz4/LZ4JNICompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JNIFastDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JNISafeDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4SafeDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4SafeUtils$Match.class
+      [jar] adding entry net/jpountz/lz4/LZ4SafeUtils.class
+      [jar] adding entry net/jpountz/lz4/LZ4UnknownSizeDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4Utils$Match.class
+      [jar] adding entry net/jpountz/lz4/LZ4Utils.class
+      [jar] adding entry net/jpountz/util/ByteBufferUtils.class
+      [jar] adding entry net/jpountz/util/Native$1.class
+      [jar] adding entry net/jpountz/util/Native$OS.class
+      [jar] adding entry net/jpountz/util/Native.class
+      [jar] adding entry net/jpountz/util/SafeUtils.class
+      [jar] adding entry net/jpountz/util/Utils.class
+      [jar] adding entry net/jpountz/xxhash/AbstractStreamingXXHash32Java.class
+      [jar] adding entry net/jpountz/xxhash/AbstractStreamingXXHash64Java.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32$1.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JNI$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JNI.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64$1.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JNI$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JNI.class
+      [jar] adding entry net/jpountz/xxhash/XXHash32.class
+      [jar] adding entry net/jpountz/xxhash/XXHash32JNI.class
+      [jar] adding entry net/jpountz/xxhash/XXHash64.class
+      [jar] adding entry net/jpountz/xxhash/XXHash64JNI.class
+      [jar] adding entry net/jpountz/xxhash/XXHashConstants.class
+      [jar] adding entry net/jpountz/xxhash/XXHashFactory.class
+      [jar] adding entry net/jpountz/xxhash/XXHashJNI.class
+      [jar] adding entry net/jpountz/lz4/LZ4UnsafeUtils.class
+      [jar] adding entry net/jpountz/util/UnsafeUtils.class
+      [jar] adding entry net/jpountz/lz4/LZ4HCJavaSafeCompressor$HashTable.class
+      [jar] adding entry net/jpountz/lz4/LZ4HCJavaSafeCompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4HCJavaUnsafeCompressor$HashTable.class
+      [jar] adding entry net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaSafeCompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaSafeFastDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaSafeSafeDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaUnsafeCompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaUnsafeFastDecompressor.class
+      [jar] adding entry net/jpountz/lz4/LZ4JavaUnsafeSafeDecompressor.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JavaSafe$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JavaSafe.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JavaUnsafe$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JavaUnsafe.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JavaSafe$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JavaSafe.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JavaUnsafe$Factory.class
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JavaUnsafe.class
+      [jar] adding entry net/jpountz/xxhash/XXHash32JavaSafe.class
+      [jar] adding entry net/jpountz/xxhash/XXHash32JavaUnsafe.class
+      [jar] adding entry net/jpountz/xxhash/XXHash64JavaSafe.class
+      [jar] adding entry net/jpountz/xxhash/XXHash64JavaUnsafe.class
+      [jar] adding entry net/jpountz/util/darwin/x86_64/history.xml
+      [jar] duplicate file net/jpountz/util/darwin/x86_64/liblz4-java.dylib found, adding.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: /Users/maropu/Repositories/lz4-java/build.xml:354: 
+
+-jar-pure-java:
+Property "lz4-pure-java" has not been set
+Property "lz4-pure-java" has not been set
+Skipped because property '${lz4-pure-java}' not set.
+
+jar:
+
+bundle:
+Trying to override old definition of task bnd
+Trying to override old definition of task bndeclipse
+Trying to override old definition of task bndexpand
+Trying to override old definition of task bnddeploy
+Trying to override old definition of task bndprepare
+Trying to override old definition of task bndwrap
+Trying to override old definition of task bndproject
+Overriding previous definition of property "packages.version"
+  [bndwrap] lz4-java 89 0
+   [delete] Deleting: /Users/maropu/Repositories/lz4-java/dist/lz4-java.jar
+
+docs:
+    [mkdir] Created dir: /Users/maropu/Repositories/lz4-java/build/docs
+  [javadoc] Generating Javadoc
+dropping /Users/maropu/Repositories/lz4-java/usr/local/share/ant from path as it doesn't exist
+  [javadoc] Executing '/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/bin/javadoc' with arguments:
+  [javadoc] '-overview'
+  [javadoc] '/Users/maropu/Repositories/lz4-java/src/java/overview.html'
+  [javadoc] '-windowtitle'
+  [javadoc] 'lz4 / xxhash - Java API 1.8-SNAPSHOT'
+  [javadoc] '-d'
+  [javadoc] '/Users/maropu/Repositories/lz4-java/build/docs'
+  [javadoc] '-classpath'
+  [javadoc] '/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-antlr.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-bcel.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-bsf.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-log4j.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-oro.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-regexp.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-resolver.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-apache-xalan2.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-commons-logging.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-commons-net.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-imageio.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-jai.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-javamail.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-jdepend.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-jmf.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-jsch.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-junit4.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-junitlauncher.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-netrexx.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-swing.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-testutil.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant-xz.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/bcel-6.4.0.jar:/usr/local/Cellar/ant/1.10.7/libexec/lib/ivy-2.4.0.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/tools.jar'
+  [javadoc] '-version'
+  [javadoc] '-author'
+  [javadoc] '-sourcepath'
+  [javadoc] '/Users/maropu/Repositories/lz4-java/src/java'
+  [javadoc] '-link'
+  [javadoc] 'http://download.oracle.com/javase/6/docs/api/'
+  [javadoc] 'net.jpountz.lz4'
+  [javadoc] 'net.jpountz.xxhash'
+  [javadoc] 
+  [javadoc] The ' characters around the executable and arguments are
+  [javadoc] not part of the command.
+  [javadoc] Javadoc execution
+  [javadoc] Loading source files for package net.jpountz.lz4...
+  [javadoc] Loading source files for package net.jpountz.xxhash...
+  [javadoc] Constructing Javadoc information...
+  [javadoc] Standard Doclet version 1.8.0_181
+  [javadoc] Building tree for all the packages and classes...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4BlockInputStream.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4BlockOutputStream.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4Compressor.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4CompressorWithLength.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4Decompressor.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4DecompressorWithLength.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4Exception.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4Factory.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FastDecompressor.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameInputStream.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameOutputStream.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameOutputStream.BD.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameOutputStream.BLOCKSIZE.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameOutputStream.FLG.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4FrameOutputStream.FLG.Bits.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4SafeDecompressor.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/LZ4UnknownSizeDecompressor.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/StreamingXXHash32.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/StreamingXXHash64.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/XXHash32.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/XXHash64.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/XXHashFactory.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/overview-frame.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/package-frame.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/package-summary.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/lz4/package-tree.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/package-frame.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/package-summary.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/net/jpountz/xxhash/package-tree.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/constant-values.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/serialized-form.html...
+  [javadoc] Building index for all the packages and classes...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/overview-tree.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/index-all.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/deprecated-list.html...
+  [javadoc] Building index for all classes...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/allclasses-frame.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/allclasses-noframe.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/index.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/overview-summary.html...
+  [javadoc] Generating /Users/maropu/Repositories/lz4-java/build/docs/help-doc.html...
+    [mkdir] Skipping /Users/maropu/Repositories/lz4-java/dist because it already exists.
+      [jar] Building jar: /Users/maropu/Repositories/lz4-java/dist/lz4-java-1.8-SNAPSHOT-javadoc.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory net/
+      [jar] adding directory net/jpountz/
+      [jar] adding directory net/jpountz/lz4/
+      [jar] adding directory net/jpountz/xxhash/
+      [jar] adding entry allclasses-frame.html
+      [jar] adding entry allclasses-noframe.html
+      [jar] adding entry constant-values.html
+      [jar] adding entry deprecated-list.html
+      [jar] adding entry help-doc.html
+      [jar] adding entry index-all.html
+      [jar] adding entry index.html
+      [jar] adding entry net/jpountz/lz4/LZ4BlockInputStream.html
+      [jar] adding entry net/jpountz/lz4/LZ4BlockOutputStream.html
+      [jar] adding entry net/jpountz/lz4/LZ4Compressor.html
+      [jar] adding entry net/jpountz/lz4/LZ4CompressorWithLength.html
+      [jar] adding entry net/jpountz/lz4/LZ4Decompressor.html
+      [jar] adding entry net/jpountz/lz4/LZ4DecompressorWithLength.html
+      [jar] adding entry net/jpountz/lz4/LZ4Exception.html
+      [jar] adding entry net/jpountz/lz4/LZ4Factory.html
+      [jar] adding entry net/jpountz/lz4/LZ4FastDecompressor.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameInputStream.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.BD.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.BLOCKSIZE.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.FLG.Bits.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.FLG.html
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.html
+      [jar] adding entry net/jpountz/lz4/LZ4SafeDecompressor.html
+      [jar] adding entry net/jpountz/lz4/LZ4UnknownSizeDecompressor.html
+      [jar] adding entry net/jpountz/lz4/package-frame.html
+      [jar] adding entry net/jpountz/lz4/package-summary.html
+      [jar] adding entry net/jpountz/lz4/package-tree.html
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32.html
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64.html
+      [jar] adding entry net/jpountz/xxhash/XXHash32.html
+      [jar] adding entry net/jpountz/xxhash/XXHash64.html
+      [jar] adding entry net/jpountz/xxhash/XXHashFactory.html
+      [jar] adding entry net/jpountz/xxhash/package-frame.html
+      [jar] adding entry net/jpountz/xxhash/package-summary.html
+      [jar] adding entry net/jpountz/xxhash/package-tree.html
+      [jar] adding entry overview-frame.html
+      [jar] adding entry overview-summary.html
+      [jar] adding entry overview-tree.html
+      [jar] adding entry package-list
+      [jar] adding entry script.js
+      [jar] adding entry serialized-form.html
+      [jar] adding entry stylesheet.css
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: /Users/maropu/Repositories/lz4-java/build.xml:341: 
+
+sources:
+    [mkdir] Skipping /Users/maropu/Repositories/lz4-java/dist because it already exists.
+      [jar] Building jar: /Users/maropu/Repositories/lz4-java/dist/lz4-java-1.8-SNAPSHOT-sources.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory net/
+      [jar] adding directory net/jpountz/
+      [jar] adding directory net/jpountz/lz4/
+      [jar] adding directory net/jpountz/util/
+      [jar] adding directory net/jpountz/xxhash/
+      [jar] adding entry net/jpountz/lz4/LZ4BlockInputStream.java
+      [jar] adding entry net/jpountz/lz4/LZ4BlockOutputStream.java
+      [jar] adding entry net/jpountz/lz4/LZ4ByteBufferUtils.java
+      [jar] adding entry net/jpountz/lz4/LZ4Compressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4CompressorWithLength.java
+      [jar] adding entry net/jpountz/lz4/LZ4Constants.java
+      [jar] adding entry net/jpountz/lz4/LZ4Decompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4DecompressorWithLength.java
+      [jar] adding entry net/jpountz/lz4/LZ4Exception.java
+      [jar] adding entry net/jpountz/lz4/LZ4Factory.java
+      [jar] adding entry net/jpountz/lz4/LZ4FastDecompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4FrameInputStream.java
+      [jar] adding entry net/jpountz/lz4/LZ4FrameOutputStream.java
+      [jar] adding entry net/jpountz/lz4/LZ4HCJNICompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4JNI.java
+      [jar] adding entry net/jpountz/lz4/LZ4JNICompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4JNIFastDecompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4JNISafeDecompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4SafeDecompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4SafeUtils.java
+      [jar] adding entry net/jpountz/lz4/LZ4UnknownSizeDecompressor.java
+      [jar] adding entry net/jpountz/lz4/LZ4Utils.java
+      [jar] adding entry net/jpountz/lz4/package.html
+      [jar] adding entry net/jpountz/util/ByteBufferUtils.java
+      [jar] adding entry net/jpountz/util/Native.java
+      [jar] adding entry net/jpountz/util/SafeUtils.java
+      [jar] adding entry net/jpountz/util/Utils.java
+      [jar] adding entry net/jpountz/util/package.html
+      [jar] adding entry net/jpountz/xxhash/AbstractStreamingXXHash32Java.java
+      [jar] adding entry net/jpountz/xxhash/AbstractStreamingXXHash64Java.java
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32.java
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash32JNI.java
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64.java
+      [jar] adding entry net/jpountz/xxhash/StreamingXXHash64JNI.java
+      [jar] adding entry net/jpountz/xxhash/XXHash32.java
+      [jar] adding entry net/jpountz/xxhash/XXHash32JNI.java
+      [jar] adding entry net/jpountz/xxhash/XXHash64.java
+      [jar] adding entry net/jpountz/xxhash/XXHash64JNI.java
+      [jar] adding entry net/jpountz/xxhash/XXHashConstants.java
+      [jar] adding entry net/jpountz/xxhash/XXHashFactory.java
+      [jar] adding entry net/jpountz/xxhash/XXHashJNI.java
+      [jar] adding entry net/jpountz/xxhash/package.html
+      [jar] adding entry overview.html
+      [jar] adding entry net/jpountz/lz4/LZ4UnsafeUtils.java
+      [jar] adding entry net/jpountz/util/UnsafeUtils.java
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: /Users/maropu/Repositories/lz4-java/build.xml:321: 
+
+makepom:
+Overriding previous definition of property "ivy.version"
+
+dist:
+
+BUILD SUCCESSFUL
+Total time: 25 seconds
